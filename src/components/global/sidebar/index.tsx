@@ -11,7 +11,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
-import { useQueryData } from "@/hooks/useQueryData";
 import { NotificationsProps, WorkspaceProps } from "@/types/index.type";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
@@ -28,6 +27,7 @@ import { Button } from "@/components/ui/button";
 import Loader from "../loader";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import InfoBar from "../info-bar";
+import { useQueryData } from "@/hooks/useQueryData";
 
 type Props = {
   activeWorkSpaceId: string;
